@@ -33,7 +33,10 @@
             label1 = new Label();
             textBox1 = new TextBox();
             textPassword = new TextBox();
-            checkBox1 = new CheckBox();
+            Muestra = new CheckBox();
+            Entrar = new Button();
+            label2 = new Label();
+            button1 = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -94,22 +97,63 @@
             textPassword.Text = "Ingrese su Contraseña";
             textPassword.TextAlign = HorizontalAlignment.Center;
             // 
-            // checkBox1
+            // Muestra
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(305, 323);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(67, 19);
-            checkBox1.TabIndex = 4;
-            checkBox1.Text = "Mostrar";
-            checkBox1.UseVisualStyleBackColor = true;
+            Muestra.AutoSize = true;
+            Muestra.Font = new Font("Yu Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            Muestra.Location = new Point(303, 318);
+            Muestra.Name = "Muestra";
+            Muestra.Size = new Size(69, 20);
+            Muestra.TabIndex = 4;
+            Muestra.Text = "Mostrar";
+            Muestra.UseVisualStyleBackColor = true;
+            // 
+            // Entrar
+            // 
+            Entrar.BackColor = Color.DodgerBlue;
+            Entrar.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            Entrar.ForeColor = Color.White;
+            Entrar.Location = new Point(212, 353);
+            Entrar.Name = "Entrar";
+            Entrar.Size = new Size(99, 36);
+            Entrar.TabIndex = 5;
+            Entrar.Text = "Entrar";
+            Entrar.UseVisualStyleBackColor = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(197, 404);
+            label2.Name = "label2";
+            label2.Size = new Size(137, 17);
+            label2.TabIndex = 6;
+            label2.Text = "¿No estas registrado?";
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.White;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Yu Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.ForeColor = Color.DodgerBlue;
+            button1.Location = new Point(212, 435);
+            button1.Name = "button1";
+            button1.Size = new Size(99, 33);
+            button1.TabIndex = 7;
+            button1.Text = "Registrarse";
+            button1.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(541, 462);
-            Controls.Add(checkBox1);
+            BackColor = Color.White;
+            ClientSize = new Size(541, 480);
+            Controls.Add(button1);
+            Controls.Add(label2);
+            Controls.Add(Entrar);
+            Controls.Add(Muestra);
             Controls.Add(textPassword);
             Controls.Add(textBox1);
             Controls.Add(label1);
@@ -129,6 +173,9 @@
         private Label label1;
         private TextBox textBox1;
         private TextBox textPassword;
-        private CheckBox checkBox1;
+        private CheckBox Muestra;
+        private Button Entrar;
+        private Label label2;
+        private Button button1;
     }
 }
