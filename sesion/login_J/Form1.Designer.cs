@@ -30,14 +30,15 @@
         {
             panel1 = new Panel();
             btnCerrar = new Button();
-            label1 = new Label();
             textBox1 = new TextBox();
             textPassword = new TextBox();
             Muestra = new CheckBox();
             Entrar = new Button();
             label2 = new Label();
             button1 = new Button();
+            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -61,16 +62,6 @@
             btnCerrar.TabIndex = 1;
             btnCerrar.Text = "X";
             btnCerrar.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Snap ITC", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(177, 116);
-            label1.Name = "label1";
-            label1.Size = new Size(176, 42);
-            label1.TabIndex = 1;
-            label1.Text = "LOGION";
             // 
             // textBox1
             // 
@@ -119,6 +110,7 @@
             Entrar.TabIndex = 5;
             Entrar.Text = "Entrar";
             Entrar.UseVisualStyleBackColor = false;
+            Entrar.Click += Entrar_Click;
             // 
             // label2
             // 
@@ -144,24 +136,35 @@
             button1.Text = "Registrarse";
             button1.UseVisualStyleBackColor = false;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.segundo;
+            pictureBox1.Location = new Point(197, 74);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(141, 104);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 8;
+            pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(541, 480);
+            Controls.Add(pictureBox1);
             Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(Entrar);
             Controls.Add(Muestra);
             Controls.Add(textPassword);
             Controls.Add(textBox1);
-            Controls.Add(label1);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
             Text = "Form1";
             panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -170,12 +173,12 @@
 
         private Panel panel1;
         private Button btnCerrar;
-        private Label label1;
         private TextBox textBox1;
         private TextBox textPassword;
         private CheckBox Muestra;
         private Button Entrar;
         private Label label2;
         private Button button1;
+        private PictureBox pictureBox1;
     }
 }
